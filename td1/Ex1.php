@@ -2,5 +2,4 @@
 <a href="?message=bonjour">Afficher bonjour</a>
 <a href="?message=salut">Afficher salut</a>
 <?php
-echo $_GET["message"]; 
-echo ("l'ami");
+echo $_GET["message"]. " l'ami";
