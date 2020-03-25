@@ -10,10 +10,10 @@
 	<a href="?message=Bleu&size=50&couleur=blue">Bleu en 50</a><br>
 	<hr>
 	<?php
-	$size = $_GET['size'] ?? 10;
-	$color = $_GET['couleur'] ?? 'black';
-	$message = $_GET['message'] ?? 'Pas de message';
-	$update = $_GET['update'] ?? null;
+	$size = $_POST['size'] ?? 10;
+	$color = $_POST['couleur'] ?? 'black';
+	$message = $_POST['message'] ?? 'Pas de message';
+	$update = $_POST['update'] ?? null;
 
 	if ($update == "+") {
 		$size = $size + 2;
@@ -25,7 +25,7 @@
 
 	?>
 	<hr>
-	<form method="GET">
+	<form method="POST">
 		<label for="message">Message : </label>
 		<input type="text" value="<?=$message?>" name="message" id="message">
 		<label for="size">Size : </label>
