@@ -5,7 +5,7 @@ use Ubiquity\log\Logger;
 use Ubiquity\themes\ThemesManager;
 
 /**
- * Controller IndexController
+ 
  **/
 class IndexController extends ControllerBase{
 

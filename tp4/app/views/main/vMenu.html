@@ -1,8 +1,14 @@
-<div class="head">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="head">
 	<div class="ui container">
 		<div class="ui pointing inverted menu">
 		  <div class="header item">
-		    Themes
+		    Theme
 		  </div>
 		  {% for theme in themes %}
 		  <a class="item {{ activeTheme==theme ? 'active' }}" href="IndexController/ct/{{theme}}">
@@ -12,3 +18,5 @@
 		</div>
 	</div>
 </div>
+</body>
+</html>
