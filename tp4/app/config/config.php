@@ -3,16 +3,15 @@ return array(
 	"siteUrl"=>"http://127.0.0.1:8090/",
 	"database"=>array(
 			"type"=>"mysql",
-			"dbName"=>"",
+			"dbName"=>"flash-mobs",
 			"serverName"=>"127.0.0.1",
 			"port"=>3306,
 			"user"=>"root",
 			"password"=>"",
 			"options"=>array(),
-			"cache"=>false,
-			"wrapper"=>"Ubiquity\\db\\providers\\pdo\\PDOWrapper"
+			"cache"=>false
 			),
-	"sessionName"=>"s5ebb94f207c76",
+	"sessionName"=>"s5eba86c4af39d",
 	"namespaces"=>array(),
 	"templateEngine"=>"Ubiquity\\views\\engine\\Twig",
 	"templateEngineOptions"=>array(
@@ -20,15 +19,13 @@ return array(
 			),
 	"test"=>false,
 	"debug"=>true,
-	"logger"=>function (){return new \Ubiquity\log\libraries\UMonolog(array (
-  'host' => '127.0.0.1',
-  'port' => 8090,
-  'sessionName' => 's5ebb94f207c76',
-)['sessionName'],\Monolog\Logger::INFO);},
+	"logger"=>function (){return new \Ubiquity\log\libraries\UMonolog("tp4",\Monolog\Logger::INFO);},
 	"di"=>array(
-			"@exec"=>array("jquery"=>function ($controller){
+			"@exec"=>array(
+					"jquery"=>function ($controller){
 						return \Ubiquity\core\Framework::diSemantic($controller);
-					})
+					}
+					)
 			),
 	"cache"=>array(
 			"directory"=>"cache/",
